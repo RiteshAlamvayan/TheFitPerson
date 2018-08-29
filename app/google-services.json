@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1011834189144",
+    "firebase_url": "https://the-fit-person.firebaseio.com",
+    "project_id": "the-fit-person",
+    "storage_bucket": "the-fit-person.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011834189144:android:7bb4f20dd3cc29d1",
+        "android_client_info": {
+          "package_name": "fitperson.ritesh.com.thefitperson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011834189144-pk4rb4s2abe3mvh07ff62uk948neaauq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRpNY9o9JZPM0bxdA_U7NCpSJnyozIajU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
