@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TheFitPerson</string>
+    <string name="password">Password</string>
+    <string name="e_mail">E-mail</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_with_email">Sign in with Email</string>
+    <string name="facebook_app_id">[APP_ID]</string>
+    <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
 </resources>
