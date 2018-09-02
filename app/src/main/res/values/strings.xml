@@ -4,6 +4,13 @@
     <string name="e_mail">E-mail</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_in_with_email">Sign in with Email</string>
-    <string name="facebook_app_id">[APP_ID]</string>
-    <string name="fb_login_protocol_scheme">fb[APP_ID]</string>
+    <string name="facebook_app_id">300351054097298</string>
+    <string name="fb_login_protocol_scheme">fb300351054097298</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="height_in_cm">Height in cm</string>
+    <string name="weight_in_kg">Weight in kg</string>
+    <string name="sex">Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
 </resources>

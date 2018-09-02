@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "1011834189144-babfpl6if2qcok5biakkkchm3r50d8j6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fitperson.ritesh.com.thefitperson",
+            "certificate_hash": "c347c76318c3e74f24722961cc25b9d9d55a4b3d"
+          }
+        },
+        {
           "client_id": "1011834189144-pk4rb4s2abe3mvh07ff62uk948neaauq.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011834189144-s2436l7slvi83jcgk2nt6dllj2kdloun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
