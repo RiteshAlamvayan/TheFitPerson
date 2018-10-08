@@ -3,7 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".LaunchActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
 
 
     <com.google.android.gms.common.SignInButton
@@ -11,16 +22,20 @@
         android:layout_width="302dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        app:buttonSize="wide"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="108dp" />
 
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
-        android:layout_width="302dp"
-        android:layout_height="60dp"
+        android:textSize="15sp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="61dp" />
+        android:layout_marginBottom="63dp"
+        android:padding="20dp" />
+
 
 </RelativeLayout>

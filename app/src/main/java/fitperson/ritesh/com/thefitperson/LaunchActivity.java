@@ -1,12 +1,15 @@
 package fitperson.ritesh.com.thefitperson;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -49,11 +52,25 @@ public class LaunchActivity extends AppCompatActivity {
     private static final String EMAIL = "email";
     LoginButton loginButton;
     DatabaseReference databaseReference;
+    VideoView videoview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launch);
+
+//        videoview = findViewById(R.id.videoView);
+//        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.video);
+//        videoview.setVideoURI(uri);
+//        videoview.start();
+        //Add video to raw folder and uncomment the above code. video unable to upload to github
+
+        videoview.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {//To restart the video on completion
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                videoview.start();
+            }
+        });
 
         databaseReference = FirebaseDatabase.getInstance().getReference("users");
         mAuth = FirebaseAuth.getInstance();
@@ -114,6 +131,13 @@ public class LaunchActivity extends AppCompatActivity {
             }
         }
 
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // to restart the video after coming from other activity like Sing up
+        videoview.start();
     }
 
     private boolean isPresentInDatabase(FirebaseUser user) {
@@ -192,5 +216,4 @@ public class LaunchActivity extends AppCompatActivity {
                     }
                 });
     }
-
 }
